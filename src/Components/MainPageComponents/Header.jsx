@@ -4,7 +4,8 @@ import { ImFacebook } from "react-icons/im";
 import { FaTwitter, FaLinkedinIn, FaYoutube } from "react-icons/fa6";
 import { MdCall } from "react-icons/md";
 import Image from 'next/image'
-import logo from '../../public/logo.png'
+import logo from '../../../public/logo.png'
+import HeaderDropdown from './Dropdown';
 
 
 
@@ -50,6 +51,7 @@ const Header = () => {
                             </div>
                             <div className="col-lg-1"></div>
                             <div className="col-lg-7">
+                                
                                 <ul className='navbar d-flex '>
                                     <li>
                                         <Link className='link' href="/">Home</Link>
@@ -58,7 +60,7 @@ const Header = () => {
                                         <Link className='link' href="/">About Us</Link>
                                     </li>
                                     <li>
-                                        <Link className='link' href="/">Property</Link>
+                                    <HeaderDropdown />
                                     </li>
                                     <li>
                                         <Link className='link' href="/">Services</Link>
