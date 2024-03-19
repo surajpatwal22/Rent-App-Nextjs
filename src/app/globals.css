@@ -1,5 +1,3 @@
-
-
 * {
   margin: 0;
   padding: 0;
@@ -109,7 +107,8 @@
 /* Bannere Section  */
 .bannerSection {
   background-image: url("../images/banner-bg.jpg");
-  padding: 80px 0 80px 0;
+  padding: 80px 0 90px 0;
+  background-size: cover;
 }
 
 .bannerSection h1 {
@@ -118,4 +117,106 @@
   text-transform: uppercase;
   font-weight: 600;
   margin-top: 0;
+}
+.bannerSection p {
+  font-size: 18px;
+  color: #fff;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.bannerSection .rent_container {
+  margin-top: 44px;
+}
+
+.bannerSection .rent_container .link {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  color: #fff;
+  background: #ffb900;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.bannerSection .rent_container .searchSection {
+  position: relative;
+  z-index: 10;
+  display: inline-block;
+  width: 100%;
+}
+
+.bannerSection .rent_container .searchSection .form-wrap {
+  background: rgba(255, 255, 255, 0.14);
+  padding: 25px;
+}
+
+.bannerSection .rent_container .searchSection .form-wrap .Rentinput {
+  align-items: center;
+  cursor: default;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 38px;
+  outline: 0 !important;
+  position: relative;
+  transition: all 100ms;
+  background-color: hsl(0, 0%, 100%);
+  border-color: hsl(0, 0%, 80%);
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 1rem;
+}
+
+.bannerSection .rent_container .searchSection .form-wrap .submitbtn {
+  background: #ffb900;
+  border: none;
+  cursor: pointer;
+  padding: 7px 0px 7px 0;
+  width: 100%;
+  border-radius: 4px;
+  outline: 0 !important;
+ 
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #000;
+  border-radius: 0;
+  font-weight: bold;
+  min-height: 38px;
+}
+
+.property-section{
+  padding-top: 2rem;
+}
+.property-section .property_heading{
+  transition: 0.3s ease;
+}
+.property-section .property_heading::before{
+  background: #ff8a00;
+  border: 0 none;
+  content: "";
+  height: 3px;
+  left: 48%;
+  border-radius: 30px;
+  position: absolute;
+  top: 41.7rem;
+  width: 50px;
+  height: 0.2rem;
+}
+
+.property-section span{
+  background: rgba(18, 18, 18, 0.1);
+  line-height: 26px;
+  color: #122636 !important;
+  padding: 1.5px 12px;
+  display: block !important;
+  max-width: max-content;
+  margin: 0 auto 5px auto !important;
+  border-radius: 4px;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  text-transform: capitalize;
 }
